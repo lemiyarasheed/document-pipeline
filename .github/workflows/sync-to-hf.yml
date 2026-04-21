@@ -15,5 +15,5 @@ jobs:
           lfs: true
       - name: Push to Hugging Face Space
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.gittoken }}
         run: git push https://lemiyarasheed:$HF_TOKEN@huggingface.co/spaces/lemiyarasheed/document-pipeline main
